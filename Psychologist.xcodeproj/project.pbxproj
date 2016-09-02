@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		F807D1AB1D79B6950084A960 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807D1AA1D79B6950084A960 /* AppDelegate.swift */; };
 		F807D1AE1D79B6950084A960 /* Psychologist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F807D1AC1D79B6950084A960 /* Psychologist.xcdatamodeld */; };
-		F807D1B01D79B6950084A960 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807D1AF1D79B6950084A960 /* ViewController.swift */; };
+		F807D1B01D79B6950084A960 /* PsychologistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807D1AF1D79B6950084A960 /* PsychologistViewController.swift */; };
 		F807D1B31D79B6950084A960 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F807D1B11D79B6950084A960 /* Main.storyboard */; };
 		F807D1B51D79B6950084A960 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F807D1B41D79B6950084A960 /* Images.xcassets */; };
 		F807D1B81D79B6950084A960 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F807D1B61D79B6950084A960 /* LaunchScreen.xib */; };
 		F807D1C41D79B6960084A960 /* PsychologistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807D1C31D79B6960084A960 /* PsychologistTests.swift */; };
+		F807D1CF1D79B8130084A960 /* FaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807D1CD1D79B8130084A960 /* FaceView.swift */; };
+		F807D1D01D79B8130084A960 /* HappinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F807D1CE1D79B8130084A960 /* HappinessViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,13 +33,15 @@
 		F807D1A91D79B6950084A960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F807D1AA1D79B6950084A960 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F807D1AD1D79B6950084A960 /* Psychologist.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Psychologist.xcdatamodel; sourceTree = "<group>"; };
-		F807D1AF1D79B6950084A960 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F807D1AF1D79B6950084A960 /* PsychologistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychologistViewController.swift; sourceTree = "<group>"; };
 		F807D1B21D79B6950084A960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F807D1B41D79B6950084A960 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F807D1B71D79B6950084A960 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F807D1BD1D79B6960084A960 /* PsychologistTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PsychologistTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F807D1C21D79B6960084A960 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F807D1C31D79B6960084A960 /* PsychologistTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychologistTests.swift; sourceTree = "<group>"; };
+		F807D1CD1D79B8130084A960 /* FaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FaceView.swift; sourceTree = "<group>"; };
+		F807D1CE1D79B8130084A960 /* HappinessViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HappinessViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +83,10 @@
 		F807D1A71D79B6950084A960 /* Psychologist */ = {
 			isa = PBXGroup;
 			children = (
-				F807D1AA1D79B6950084A960 /* AppDelegate.swift */,
-				F807D1AF1D79B6950084A960 /* ViewController.swift */,
+				F807D1CD1D79B8130084A960 /* FaceView.swift */,
+				F807D1CE1D79B8130084A960 /* HappinessViewController.swift */,
+				F807D1AF1D79B6950084A960 /* PsychologistViewController.swift */,
 				F807D1B11D79B6950084A960 /* Main.storyboard */,
-				F807D1B41D79B6950084A960 /* Images.xcassets */,
-				F807D1B61D79B6950084A960 /* LaunchScreen.xib */,
-				F807D1AC1D79B6950084A960 /* Psychologist.xcdatamodeld */,
 				F807D1A81D79B6950084A960 /* Supporting Files */,
 			);
 			path = Psychologist;
@@ -93,6 +95,10 @@
 		F807D1A81D79B6950084A960 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F807D1AA1D79B6950084A960 /* AppDelegate.swift */,
+				F807D1B41D79B6950084A960 /* Images.xcassets */,
+				F807D1B61D79B6950084A960 /* LaunchScreen.xib */,
+				F807D1AC1D79B6950084A960 /* Psychologist.xcdatamodeld */,
 				F807D1A91D79B6950084A960 /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -215,9 +221,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F807D1B01D79B6950084A960 /* ViewController.swift in Sources */,
+				F807D1B01D79B6950084A960 /* PsychologistViewController.swift in Sources */,
 				F807D1AB1D79B6950084A960 /* AppDelegate.swift in Sources */,
 				F807D1AE1D79B6950084A960 /* Psychologist.xcdatamodeld in Sources */,
+				F807D1CF1D79B8130084A960 /* FaceView.swift in Sources */,
+				F807D1D01D79B8130084A960 /* HappinessViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
