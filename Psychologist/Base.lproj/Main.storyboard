@@ -30,7 +30,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CPh-NW-t4b" kind="showDetail" identifier="happy" id="Ycl-fD-ybs"/>
+                                    <segue destination="Qm1-aZ-WBN" kind="showDetail" identifier="happy" id="Ycl-fD-ybs"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YzN-Cb-hsE">
@@ -40,7 +40,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CPh-NW-t4b" kind="showDetail" identifier="sad" id="OsP-Ms-EzQ"/>
+                                    <segue destination="Qm1-aZ-WBN" kind="showDetail" identifier="sad" id="OsP-Ms-EzQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CXt-eo-ggX">
@@ -50,8 +50,14 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="CPh-NW-t4b" kind="showDetail" identifier="meh" id="aoM-kX-6HR"/>
+                                    <segue destination="Qm1-aZ-WBN" kind="showDetail" identifier="meh" id="aoM-kX-6HR"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d0x-yX-abR">
+                                <rect key="frame" x="267" y="377" width="67" height="30"/>
+                                <state key="normal" title="Nothing!">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -79,7 +85,7 @@
                 <splitViewController id="1fi-Ez-IaR" sceneMemberID="viewController">
                     <connections>
                         <segue destination="hS1-5m-ngS" kind="relationship" relationship="masterViewController" id="F5Q-bt-MWM"/>
-                        <segue destination="CPh-NW-t4b" kind="relationship" relationship="detailViewController" id="iFc-7V-fCP"/>
+                        <segue destination="Qm1-aZ-WBN" kind="relationship" relationship="detailViewController" id="iFc-7V-fCP"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VqP-FR-vBk" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -115,6 +121,7 @@
                             <constraint firstAttribute="trailing" secondItem="3Di-Ix-jHd" secondAttribute="trailing" id="Yrn-5x-fOq"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="KY0-DQ-PnA"/>
                     <connections>
                         <outlet property="faceView" destination="3Di-Ix-jHd" id="TlK-Yb-4bz"/>
                     </connections>
@@ -126,7 +133,7 @@
                     </connections>
                 </panGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="1045" y="680"/>
+            <point key="canvasLocation" x="1895" y="680"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="2WT-cm-xtm">
@@ -145,6 +152,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ve1-2P-9qf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="233" y="-32"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="frH-Ks-Isd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Qm1-aZ-WBN" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="hI3-X3-rnx">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CPh-NW-t4b" kind="relationship" relationship="rootViewController" id="mji-ef-yQH"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DXl-yB-GCU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1083" y="680"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

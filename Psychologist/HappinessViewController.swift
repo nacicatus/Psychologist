@@ -51,6 +51,7 @@ class HappinessViewController: UIViewController, FaceViewDataSource {
     
     func updateUI() {
         faceView?.setNeedsDisplay()
+        title = "Happiness index \(happiness)%"
     }
     
     func smilinessForFaceView(sender: FaceView) -> Double? {
