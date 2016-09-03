@@ -91,9 +91,9 @@
 				F807D1CE1D79B8130084A960 /* HappinessViewController.swift */,
 				F8BD59AE1D7A99BB0052380A /* DiagnosedHappinessViewController.swift */,
 				F807D1AF1D79B6950084A960 /* PsychologistViewController.swift */,
+				F8BD59AC1D7A97E70052380A /* TextViewController.swift */,
 				F807D1B11D79B6950084A960 /* Main.storyboard */,
 				F807D1A81D79B6950084A960 /* Supporting Files */,
-				F8BD59AC1D7A97E70052380A /* TextViewController.swift */,
 			);
 			path = Psychologist;
 			sourceTree = "<group>";
